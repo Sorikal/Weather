@@ -3,6 +3,10 @@
 ## Weather
 Simple tool made to check the weather on your local/remote terminal.
 
+## Pictures
+
+![Selection](https://i.imgur.com/tD48R7h.png)
+
 ## Installation - Ubuntu/Debian
 
 	git clone https://github.com/Sorikal/Weather.git
