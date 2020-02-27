@@ -4,7 +4,7 @@ import time
 ### Checking for dependencies
 
 print("Checking for missing dependencies.")
-os.system("sudo pacman -Qi curl > log.txt")
+os.system("pacman -Qi curl > log.txt")
 
 with open('log.txt', 'r') as file:
 	dep = file.read().replace('\n', '')
