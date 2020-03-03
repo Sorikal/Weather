@@ -1,26 +1,8 @@
 import os
 
-def cls():
-    os.system("clear")
+from functions import *
 
-def Dependencies():
+Dependencies()
+CurlWeather()
 
-    os.system("dpkg -l | grep -E '^ii' | grep curl > log.txt")
-    with open('log.txt', 'r') as file:
-        cmdlog = file.read().replace('\n', '')
-
-    os.system("rm -rf log.txt")
-
-    if cmdlog == "":
-        os.system("sudo apt install curl")
-        cls()
-    else:
-        cls()
-
-def CurlWeather():
-    os.system("curl wttr.in")
-
-
-
-    
-    
+### Report any issues on Github.
